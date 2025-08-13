@@ -1,0 +1,42 @@
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    .nickname {
+      color: $color-text;
+    }
+
+    .img {
+      outline: 3px solid $color-text;
+    }
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+
+  @include media-breakpoint("lg") {
+    width: 14.5rem;
+    height: 14.5rem;
+  }
+}
+
+.img {
+  border-radius: 0.5rem;
+}
+
+.nickname {
+  font-size: 1.2rem;
+  color: $color-muted;
+
+  @include media-breakpoint("md") {
+    font-size: 1.8rem;
+  }
+}
