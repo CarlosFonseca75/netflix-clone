@@ -1,21 +1,28 @@
 import Image from "next/image";
+import classNames from "classnames";
 import type { Profile } from "@/utils/types";
 import { Text } from "@/components/common/Text";
 import styles from "./styles/ProfileCard.module.scss";
 
-const ProfileCard = (props: Profile) => {
+const ProfileCard = ({ imgUrl, nickname, isActive }: Profile) => {
   return (
-    <div className={styles["profile-card"]}>
+    <div
+      className={classNames(styles["profile-card"], {
+        [styles.active]: isActive,
+      })}
+    >
       <div className={styles["img-wrapper"]}>
         <Image
-          src={props.imgUrl}
+          src={imgUrl}
+          alt={`${nickname} profile`}
           className={styles.img}
-          alt={`${props.nickname} profile`}
+          priority
           fill
         />
       </div>
+
       <Text variant="p" className={styles.nickname}>
-        {props.nickname}
+        {nickname}
       </Text>
     </div>
   );

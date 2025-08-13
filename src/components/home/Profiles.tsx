@@ -6,11 +6,12 @@ import styles from "./styles/Profiles.module.scss";
 const profiles: Profile[] = [
   {
     imgUrl: "/blue-profile.webp",
-    nickname: "John",
+    nickname: "José Antonio",
+    isActive: true,
   },
   {
     imgUrl: "/blue-profile.webp",
-    nickname: "José",
+    nickname: "John",
   },
   {
     imgUrl: "/red-profile.webp",
@@ -34,8 +35,13 @@ const Profiles = () => {
       </Text>
 
       <div className={styles["profiles-list"]}>
-        {profiles.map(({ imgUrl, nickname }) => (
-          <ProfileCard key={nickname} imgUrl={imgUrl} nickname={nickname} />
+        {profiles.map(({ imgUrl, nickname, isActive }) => (
+          <ProfileCard
+            key={nickname}
+            imgUrl={imgUrl}
+            nickname={nickname}
+            isActive={isActive}
+          />
         ))}
       </div>
     </div>
