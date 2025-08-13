@@ -1,5 +1,6 @@
 import type { Profile } from "@/utils/types";
 import { Text } from "@/components/common/Text";
+import { Button } from "@/components/common/Button";
 import { ProfileCard } from "./ProfileCard";
 import styles from "./styles/Profiles.module.scss";
 
@@ -44,6 +45,8 @@ const Profiles = () => {
           />
         ))}
       </div>
+
+      <Button variant="outline">Manage profiles</Button>
     </div>
   );
 };

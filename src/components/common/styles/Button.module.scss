@@ -1,0 +1,38 @@
+%outline-hover {
+  &:hover {
+    border-color: $color-text;
+    color: $color-text;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  padding: 0.7rem 2rem;
+  border: none;
+  gap: 1rem;
+
+  @include media-breakpoint("xl") {
+    font-size: 1.8rem;
+  }
+
+  @include media-breakpoint("2xl") {
+    font-size: 2.5rem;
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-muted;
+    border: 1px solid $color-muted;
+    @extend %outline-hover;
+  }
+
+  &--blocked {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+}
