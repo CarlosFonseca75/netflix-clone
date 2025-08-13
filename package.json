@@ -2,6 +2,20 @@
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
+  "description": "🎬 Netflix-inspired frontend clone built with Next.js and SCSS — fully responsive, modern, and designed for a cinematic experience.",
+  "author": "Carlos Fonseca",
+  "keywords": [
+    "netflix",
+    "netflix-clone",
+    "frontend",
+    "nextjs",
+    "scss",
+    "react",
+    "movies",
+    "typescript",
+    "ui-clone",
+    "web-app"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
