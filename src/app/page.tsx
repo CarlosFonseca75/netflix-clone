@@ -1,4 +1,4 @@
-import { Nav } from "@/components/home/Nav";
+import { MoreReasons } from "@/components/home/MoreReasons";
 
 export const metadata = {
   title: "Netflix Mexico - Watch TV Shows Online, Watch Movies Online",
@@ -7,5 +7,9 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <Nav />;
+  return (
+    <>
+      <MoreReasons />
+    </>
+  );
 }

@@ -1,0 +1,24 @@
+.reason-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2.2rem 1rem;
+  border-radius: 2rem;
+  width: 29rem;
+  height: 33rem;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.description {
+  color: $color-grey;
+}
+
+.img {
+  align-self: flex-end;
+  margin-top: auto;
+}
